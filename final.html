@@ -1,0 +1,156 @@
+<!Doctype html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="SHORTCUT ICON" href="delan1.png" type="image/x-icon" />
+<link rel="ICON" href="delan1.png" type="image/ico" />
+<link rel="stylesheet" href="1.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+ 
+
+<script>
+
+
+$(document).ready(function(){
+   
+   
+   
+   $("#div1").hide();
+        $("#div2").hide();
+        $("#div3").hide();
+   
+
+   $("button").click(function() {
+
+      $("#div1").fadeToggle();
+        $("#div2").fadeToggle();
+        $("#div3").fadeToggle();// First click should toggle to 'show'
+
+      return false;
+
+   });
+
+});
+
+</script>
+</head>
+<body>
+        <div id="container" class="container">
+			<header class="intro">
+				
+				<div class="intro__content">
+					
+					<div class="intro__subtitle">
+					<div class="abc">
+	<div>
+		<img src="delanlogo.png" style="float: right; width:41.66%;margin-left:2rem">
+		
+	</div>
+	
+
+	<div style="position: fixed; top:35%; left:18%;">
+					<div class="b" style="width: 200px; height: 1em; overflow: hidden;"><font color="white" size="3"><h1><b>connecting <font color="#3498db">local retailers</font> with their buyers and making them <br>part of <font color="#1abc9c"><b>ecommerce revolution</b></font></h1></font></div>
+
+					
+                        <div style="width: 200px; height: 1em; overflow: hidden;">
+			<div class='container' style="position: absolute; top:150%; left:34%;">
+  				<div class='button green center'>
+  				  <div class="b" ><font size="3" color="#000000">COMING SOON!!!</font></div></div>
+			</div>
+                        </div>
+            <img src="3.png" style="position: absolute;left:1%;top:78%;">
+	</div>
+
+
+		<div class="c">
+			<svg width="1500" height="110">
+  				<rect width="1500" height="3" style="fill:rgb(52, 152, 219);stroke-width:3;">
+       	 </svg>
+		</div>
+		
+	</div>
+	<button class="trigger">
+							
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<g class="icon icon--grid">
+									<rect x="32.5" y="5.5" width="22" height="22"/>
+									<rect x="4.5" y="5.5" width="22" height="22"/>
+									<rect x="32.5" y="33.5" width="22" height="22"/>
+									<rect x="4.5" y="33.5" width="22" height="22"/>
+								</g>
+								<g class="icon icon--cross">
+									<line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+									<line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+								</g>
+							</svg>
+							<span>View content</span>
+						</button>
+						</div>
+						</div>
+						<div id="space" class="marquee">
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+           
+
+
+	<div style="width: 200px; height: 1em; overflow: hidden;">		
+<div id="div1" class="b" ><font color="#1abc9c" size="6">WHAT WE ARE</font></div>
+<br>
+    </div>
+
+
+     <div style="position: fixed; left:10%; top:58%">	
+<div id="div2" class="b" ><font color="white" size="5"> - We at Delan </font><font color="#3498db">pioneer to bring the local shops on the e-commerce map.</font>
+     
+
+
+
+     
+<font color="white"> - In the era of increasing ecommerce dependence of the customers in grocery and other daily use commodities, the offline retailers bear a loss.<br> - This happens because the customer has a pool of services at his disposal which include certain information about the product like its price, delivery time and others.<br> - To rectify this and to bridge the gap between online and offline stores providing benefits to the retailers as well as the customers,<br> - <font color="#3498db">Delan </font>comes to the fore.</font></div>
+        </div>
+
+		</div><!-- /container -->
+		
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+				var container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function toggleContent() {
+					if( classie.has( container, 'container--open' ) ) {
+						classie.remove( container, 'container--open' );
+						classie.remove( trigger, 'trigger--active' );
+						window.addEventListener( 'scroll', noscroll );
+					}
+					else {
+						classie.add( container, 'container--open' );
+						classie.add( trigger, 'trigger--active' );
+						window.removeEventListener( 'scroll', noscroll );
+					}
+				}
+
+				function noscroll() {
+					window.scrollTo( 0, 0 );
+				}
+
+				// reset scrolling position
+				document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+				// disable scrolling
+				window.addEventListener( 'scroll', noscroll );
+
+				trigger.addEventListener( 'click', toggleContent );
+
+				// For Demo purposes only (prevent jump on click)
+				[].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+			})();
+		</script>
+	
+
+
+
+
+</body>
+</html>
